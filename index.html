@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d18e55fbc0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+    
+    <title>My Address Book</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center"> <i class="fas fa-book-open"></i>
+            <span class="text-primary">My </span> AddressBook </h1>
+
+        <form id="book-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" class="form-control">
+            </div>
+            <input type="submit" value="Add Address" class="btn btn-primary btn-block">
+        </form>
+
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th> 
+                    <th>Company</th>
+                    <th>Email</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="address-list"></tbody>
+        </table>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
